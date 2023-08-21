@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 02</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #botao{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .botao2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .botao-init{
+            border: none;
+            background-color: rgb(58, 58, 58);
+            margin: 50px;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            color: rgb(255, 255, 255);
+            border-radius: 5px;
+            transition: all .4s ease;
+        }
+
+        .botao-init:hover{
+            cursor: pointer;
+            transform: scale(1.1,1.1);
+        }
+        .area-calc{
+            background-color: rgb(197, 197, 197);
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 450px;
+            height: 600px;
+            border: 2px solid black;
+            border-radius: 2.5px;
+            box-shadow: 8px 8px 0px black;
+        }
+    </style>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        function calculadora(){
+
+            var valor1 = parseInt(prompt("Digite o primeiro valor: ", ""));
+            var valor2 = parseInt(prompt("Digite o segundo valor: ", ""));
+            var operador = prompt("Digite a operação que deseja realizar com os números " + valor1 + " e " + valor2 + ":", "");
+            var resultado;
+            var resultadoElement = document.getElementById("resultado");
+
+            if(operador === '+'){
+                resultado = valor1 + valor2;
+            }
+
+            else if(operador === '-'){
+                resultado = valor1 - valor2;
+            }
+
+            else if(operador === '*'){
+                resultado = valor1 * valor2;
+            }
+
+            else if(operador === '/'){
+                if(parseFloat(valor2) === 0){
+                    resultado = "Erro!";
+                }
+
+                else{
+                    resultado = valor1 / valor2;
+                }
+
+            }
+
+            else{
+                alert("Valor Inválido!");
+            }
+
+            result.innerHTML = "O RESULTADO DA OPERAÇÃO " + valor1 + operador + valor2 + " FOI = " + resultado;
+
+        }
+
+    </script>
+
+    <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">ATIVIDADE 2</h1>
+
+    <div class="area-calc">
+        <div id="botao">
+            <input type="button" value="Calculadora" onclick="javascript:calculadora()" class="botao-init" readonly>
+        </div>
+        <div style="font-weight: bold;">
+            <p style="display: block;" id="result">RESULTADO!</p>
+        </div>
+    </div>
+
+</body>
+</html>

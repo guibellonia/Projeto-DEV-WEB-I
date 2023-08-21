@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+    <style>
+        #botao{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .botao-init{
+            border: none;
+            background-color: rgb(150, 150, 150);
+            margin: 50px;
+            padding: 45px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            color: black;
+            border-radius: 10px;
+            transition: all .4s ease;
+        }
+
+        .botao-init:hover{
+            cursor: pointer;
+            transform: scale(1.1,1.1);
+        }
+    </style>
+</head>
+<body onload="boasvindas()">
+    
+    <script type="text/javascript">
+
+        function boasvindas(){
+            alert("Bem-Vindo ao Meu Primeiro Script!");
+        }
+
+        function nota(){
+            var nota = prompt("Insira a nota do aluno:", " ");
+
+            if((nota >= 60) && (nota <= 100)){
+                alert("O aluno com nota " + nota + " foi aprovado!");
+            }
+            else if((nota < 60) && (nota >= 0)){
+                alert("O aluno com nota " + nota + " foi reprovado!");
+            }
+            else{
+                alert("Nota inválida.");
+            }
+        }
+
+    </script>
+    <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">ATIVIDADE 1</h1>
+    
+    <div id="botao">
+        <input type="button" value="Calcular Nota" onclick="javascript:nota()" class="botao-init">
+    </div>
+
+</body>
+</html>

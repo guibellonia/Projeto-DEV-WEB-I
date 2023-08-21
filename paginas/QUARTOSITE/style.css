@@ -1,0 +1,85 @@
+body{
+
+    background-image:url("wallpa.jpg");
+    font-family: 'Lucida Sans';
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+.loginpage{
+    font-family: 'Lucida Sans';
+    width: 500px;
+    padding: 6.5% 0 0;
+    margin: auto;
+}
+
+.register-form{
+    position: relative;
+    z-index: 1;
+    padding: 15px;
+    background:transparent;
+    max-width: 500px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    border: 2px solid rgb(84, 135, 202);
+    border-radius: 10px;
+    backdrop-filter:blur(20px);
+}
+
+.register-form .toptext{
+    font-family:'Lucida Sans';
+    color: whitesmoke;
+    font-size: 50px;
+    padding: 30px;
+    text-shadow: 0 0 6px rgb(0, 0, 0, .5);
+}
+
+.register-form input{
+    font-family: 'Lucida Sans';
+    background-color: whitesmoke;
+    font-size: 14px;
+    width: 100%;
+    outline: 0;
+    margin: 0 0 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    -webkit-text-fill-color: rgb(149, 149, 163);
+}
+
+.register-form button{
+    font-family: 'Lucida Sans';
+    background-color: rgb(65, 79, 206);
+    color: whitesmoke;
+    width: 50%;
+    padding: 8px;
+    border-style: hidden;
+    border-radius: 15px;
+    border: 0;
+    text-transform: uppercase;
+    font-size:14px;
+    box-shadow: 0 2px 0px rgba(0, 0, 0, .5);
+    transition: all 0.4s ease;
+    cursor:pointer;
+}
+
+.register-form button:hover,
+.register-form button:active,
+.register-form button:focus{
+    padding: 15px;
+    width: 55%;
+    background-color: rgb(91, 108, 255);
+}
+
+.register-form .message{
+    color: whitesmoke;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.register-form a{
+    color: rgb(69, 86, 235);
+    text-decoration:none;
+}

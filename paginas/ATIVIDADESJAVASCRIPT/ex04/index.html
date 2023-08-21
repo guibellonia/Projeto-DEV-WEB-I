@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Javascript</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .align{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            background-color: rgb(219, 219, 219);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 7.5%;
+            width: 600px;
+            padding: 30px;
+            height: 500px;
+            border: 5px solid rgb(190, 190, 190);
+            border-radius: 5px;
+            box-shadow: 10px 10px 0px black;
+        }
+        input{
+            border: none;
+            box-shadow: 2px 2px 0px black;
+            border-radius: 3px;
+        }
+        .botao-cadastro{
+            padding: 15px 25px 15px 25px;
+            border: none;
+            border-radius: 3px;
+            background-color: #F56578;
+            box-shadow: 3px 3px 0px black;
+            cursor: pointer;
+        }
+        #dados{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(65, 65, 78);">
+
+    <script type="text/javascript">
+
+        function formulario(){
+
+            var nome = document.getElementById("nome").value;
+            var telefone = document.getElementById("telefone").value;
+            var email = document.getElementById("email").value;
+            var usuario = document.getElementById("usuario").value;
+            var senha = document.getElementById("senha").value;
+            var dados;
+
+            document.getElementById('dados').innerHTML = nome + "<br>" + telefone + "<br>" + email + "<br>" + usuario + "<br>" + senha;
+        }
+
+    </script>
+    
+    <div class="align">
+        <div class="container">
+            <form>
+                <h1>CADASTRO</h1>
+                <p>Nome:  <input type="text" id="nome" required></p>
+                <p>Telefone de Contato:  <input type="text" id="telefone" placeholder="(XX)XXXXX-XXXX"></p>
+                <p>E-Mail de Contato:  <input type="email" id="email" required></p>
+                <p>Usuário:  <input type="text" id="usuario" required></p>
+                <p>Senha:  <input type="password" id="senha" required></p>
+                <input type="button" value="ENVIAR" onclick="javascript:formulario()" class="botao-cadastro">
+                <input type="reset" value="CANCELAR" class="botao-cadastro">
+            </form>
+            <span id="dados"></span>
+        </div>
+    </div>
+
+</body>
+</html>

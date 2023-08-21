@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+      <title>Tabela de Horas do Dia</title>
+      <meta charset=iso-8859-1/>
+    <body bgcolor=#daf5db>
+      <p align="center"><b><font face="Arial" size="6">Tabela de Horas do Dia</font></b></p>
+      <center>
+      <table border=2 bgcolor=#80ed84>
+        <tr>
+          <th>Hora do Dia</th>
+          <th>Aproveitamento</th>
+          <th>Nota</th>
+          <th>Acidentes</th>
+          <th>Quantidade de Sol</th>
+          <th>Sono</th>
+        </tr>
+        <tr>
+          <td>00:00 - 05:00</td>
+          <td>23.3%</td>
+          <td>6</td>
+          <td>Raros</td>
+          <td>Mínima</td>
+          <td>Máximo</td>
+        </tr>
+        <tr>
+          <td>05:00 - 12:00</td>
+          <td>87,5%</td>
+          <td>10</td>
+          <td>Frequentes</td>
+          <td>Máxima</td>
+          <td>Mínimo</td>
+        </tr>
+        <tr>
+          <td>12:00 - 15:00</td>
+          <td>65,3%</td>
+          <td>8.7</td>
+          <td>Frequentes</td>
+          <td>Máxima</td>
+          <td>Moderado</td>
+        </tr>
+        <tr>
+          <td>15:00 - 18:00</td>
+          <td>31,2%</td>
+          <td>3</td>
+          <td>Frequentes</td>
+          <td>Moderada</td>
+          <td>Moderado</td>
+        </tr>
+        <tr>
+          <td>18:00 - 20:00</td>
+          <td>97%</td>
+          <td>10</td>
+          <td>Moderados</td>
+          <td>Mínima</td>
+          <td>Moderado</td>
+        </tr>
+        <tr>
+          <td>20:00 - 00:00</td>
+          <td>100%</td>
+          <td>10</td>
+          <td>Raros</td>
+          <td>Mínima</td>
+          <td>Máximo</td>
+        </tr>
+      </table>
+      </center>
+    </body>
+</html>
